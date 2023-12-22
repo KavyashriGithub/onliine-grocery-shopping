@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="691.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShoppingApp.Products">
+   <children>
+      <ScrollPane layoutX="43.0" layoutY="53.0" prefHeight="578.0" prefWidth="766.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="663.0" prefWidth="758.0" style="-fx-background-color: white;">
+               <children>
+                  <Pane layoutY="3.0" prefHeight="166.0" prefWidth="191.0">
+                     <children>
+                        <ImageView fitHeight="71.0" fitWidth="66.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/AdobeStock_164576684_Preview.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="Tomatoname" alignment="CENTER" layoutX="84.0" layoutY="11.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #f75050; -fx-background-radius: 50px;" text="Tomato" />
+                        <Label fx:id="Tomatoprice" alignment="CENTER" layoutX="84.0" layoutY="39.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #f75050; -fx-background-radius: 50px;" text="25" />
+                        <TextField fx:id="TomatoQuantity" layoutX="84.0" layoutY="64.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="119.0" layoutY="97.0" mnemonicParsing="false" onAction="#Ctomato" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="Totaltomato" alignment="CENTER" layoutX="59.0" layoutY="98.0" prefHeight="24.0" prefWidth="50.0" />
+                        <Button layoutX="44.0" layoutY="131.0" mnemonicParsing="false" onAction="#Tomato1" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="176.0" layoutY="3.0" prefHeight="166.0" prefWidth="191.0">
+                     <children>
+                        <ImageView fitHeight="68.0" fitWidth="78.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/AdobeStock_69375046_Preview.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="pumN" alignment="CENTER" layoutX="88.0" layoutY="9.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #f4a767; -fx-background-radius: 50px;" text="Pumpkin" />
+                        <Label fx:id="pumP" alignment="CENTER" layoutX="88.0" layoutY="37.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #f4a767; -fx-background-radius: 50px;" text="50" />
+                        <TextField fx:id="pumQ" layoutX="88.0" layoutY="61.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="123.0" layoutY="94.0" mnemonicParsing="false" onAction="#Cpum" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="TotalPum" alignment="CENTER" layoutX="59.0" layoutY="103.0" prefHeight="25.0" prefWidth="58.0" />
+                        <Button layoutX="56.0" layoutY="128.0" mnemonicParsing="false" onAction="#Pumpkin" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="367.0" layoutY="14.0" prefHeight="152.0" prefWidth="191.0">
+                     <children>
+                        <Label fx:id="CarrotN" alignment="CENTER" layoutX="96.0" layoutY="1.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #f4a767; -fx-background-radius: 50px;" text="Carrot" />
+                        <Label fx:id="carrotP" alignment="CENTER" layoutX="96.0" layoutY="30.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #f4a767; -fx-background-radius: 50px;" text="35" />
+                        <TextField fx:id="carrotQ" layoutX="100.0" layoutY="55.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onAction="#Ccarrot" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="Totalcarrot" alignment="CENTER" layoutX="69.0" layoutY="88.0" prefHeight="24.0" prefWidth="54.0" />
+                        <ImageView fitHeight="59.0" fitWidth="94.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/AdobeStock_42077753_Preview.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="69.0" layoutY="119.0" mnemonicParsing="false" onAction="#Carrot" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="570.0" layoutY="14.0" prefHeight="152.0" prefWidth="191.0">
+                     <children>
+                        <Label fx:id="CybageN" alignment="CENTER" layoutX="96.0" layoutY="1.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #66bc5f; -fx-background-radius: 50px;" text="Cabbage" textFill="#101010" />
+                        <Label fx:id="CybageP" alignment="CENTER" layoutX="96.0" layoutY="30.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #66bc5f; -fx-background-radius: 50px;" text="40" />
+                        <TextField fx:id="CybageQ" layoutX="100.0" layoutY="55.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onAction="#CCybage" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="TotalCybage" alignment="CENTER" layoutX="69.0" layoutY="88.0" prefHeight="24.0" prefWidth="54.0" />
+                        <ImageView fitHeight="59.0" fitWidth="94.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/cybage.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="69.0" layoutY="119.0" mnemonicParsing="false" onAction="#CybageBut" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+                  <Pane layoutY="201.0" prefHeight="152.0" prefWidth="191.0">
+                     <children>
+                        <Label fx:id="GarlicN" alignment="CENTER" layoutX="96.0" layoutY="1.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #eabdbd; -fx-background-radius: 50px;" text="Garlic" textFill="#080808" />
+                        <Label fx:id="GarlicP" alignment="CENTER" layoutX="96.0" layoutY="30.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #eabdbd; -fx-background-radius: 50px;" text="40" />
+                        <TextField fx:id="GarlicQ" layoutX="100.0" layoutY="55.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onAction="#CGarlic" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="TotalGarlic" alignment="CENTER" layoutX="69.0" layoutY="88.0" prefHeight="24.0" prefWidth="54.0" />
+                        <ImageView fitHeight="91.0" fitWidth="125.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Garlic.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="69.0" layoutY="119.0" mnemonicParsing="false" onAction="#GarlicBut" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="184.0" layoutY="201.0" prefHeight="152.0" prefWidth="191.0">
+                     <children>
+                        <Label fx:id="MashroomN" alignment="CENTER" layoutX="96.0" layoutY="1.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #a97a73; -fx-background-radius: 50px;" text="Mushroom" textFill="#232222" />
+                        <Label fx:id="MashroomP" alignment="CENTER" layoutX="96.0" layoutY="30.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #a97a73; -fx-background-radius: 50px;" text="40" textFill="#050505" />
+                        <TextField fx:id="MashroomQ" layoutX="100.0" layoutY="55.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onAction="#CMashroom" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="TotalMashroom" alignment="CENTER" layoutX="69.0" layoutY="88.0" prefHeight="24.0" prefWidth="54.0" />
+                        <ImageView fitHeight="80.0" fitWidth="95.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Mashroom.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="69.0" layoutY="119.0" mnemonicParsing="false" onAction="#MashroomBut" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="383.0" layoutY="201.0" prefHeight="152.0" prefWidth="191.0">
+                     <children>
+                        <Label fx:id="OnionN" alignment="CENTER" layoutX="96.0" layoutY="1.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #f7b790; -fx-background-radius: 50px;" text="Onion" textFill="#1b1a1a" />
+                        <Label fx:id="OnionP" alignment="CENTER" layoutX="96.0" layoutY="30.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #f7b790; -fx-background-radius: 50px;" text="40" />
+                        <TextField fx:id="OnionQ" layoutX="100.0" layoutY="55.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onAction="#COnion" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="TotalOnion" alignment="CENTER" layoutX="69.0" layoutY="88.0" prefHeight="24.0" prefWidth="54.0" />
+                        <ImageView fitHeight="65.0" fitWidth="90.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Onion.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="69.0" layoutY="119.0" mnemonicParsing="false" onAction="#OnionBut" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="570.0" layoutY="201.0" prefHeight="152.0" prefWidth="191.0">
+                     <children>
+                        <Label fx:id="CucN" alignment="CENTER" layoutX="96.0" layoutY="1.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #66bc5f; -fx-background-radius: 50px;" text="Cucumber" />
+                        <Label fx:id="CucP" alignment="CENTER" layoutX="96.0" layoutY="30.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #66bc5f; -fx-background-radius: 50px;" text="40" />
+                        <TextField fx:id="CucQ" layoutX="100.0" layoutY="55.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onAction="#CCuc" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="TotalCuc" alignment="CENTER" layoutX="69.0" layoutY="88.0" prefHeight="24.0" prefWidth="54.0" />
+                        <ImageView fitHeight="72.0" fitWidth="95.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Cucumber.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="69.0" layoutY="119.0" mnemonicParsing="false" onAction="#CucBut" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="14.0" layoutY="373.0" prefHeight="152.0" prefWidth="191.0">
+                     <children>
+                        <Label fx:id="PotatoN" alignment="CENTER" layoutX="96.0" layoutY="1.0" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #dcc26e; -fx-background-radius: 50px;" text="Potato" textFill="#131312" />
+                        <Label fx:id="PotatoP" alignment="CENTER" layoutX="96.0" layoutY="30.0" prefHeight="20.0" prefWidth="70.0" style="-fx-background-color: #dcc26e; -fx-background-radius: 50px;" text="40" />
+                        <TextField fx:id="PotatoQ" layoutX="100.0" layoutY="55.0" prefHeight="20.0" prefWidth="70.0" promptText="Quantity" />
+                        <Button layoutX="135.0" layoutY="87.0" mnemonicParsing="false" onAction="#CPotato" prefHeight="26.0" prefWidth="35.0" text="=" />
+                        <Label fx:id="TotalPotato" alignment="CENTER" layoutX="69.0" layoutY="88.0" prefHeight="24.0" prefWidth="54.0" />
+                        <ImageView fitHeight="116.0" fitWidth="91.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/Potato.jpeg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="69.0" layoutY="119.0" mnemonicParsing="false" onAction="#PotatoBut" prefHeight="20.0" prefWidth="80.0" text="Add to cart" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="310.0" layoutY="14.0" prefHeight="32.0" prefWidth="210.0" text="Avaliable Vegetables">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="Pwelcome" layoutX="60.0" prefHeight="32.0" prefWidth="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/UserName.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="371.0" layoutY="639.0" mnemonicParsing="false" onAction="#BackP" prefHeight="32.0" prefWidth="98.0" style="-fx-background-radius: 50px;" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

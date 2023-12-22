@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="536.0" style="-fx-background-color: #5c0066;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShoppingApp.DeliveryAddress">
+   <children>
+      <Pane layoutX="93.0" layoutY="58.0" prefHeight="566.0" prefWidth="350.0" style="-fx-background-color: #b43ac1; -fx-background-radius: 30px;">
+         <children>
+            <Label layoutX="28.0" layoutY="8.0" prefHeight="30.0" prefWidth="149.0" text="First Name" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="FName" layoutX="26.0" layoutY="38.0" prefHeight="30.0" prefWidth="252.0" style="-fx-background-radius: 50px;" />
+            <Label layoutX="26.0" layoutY="77.0" prefHeight="30.0" prefWidth="149.0" text="Last Name" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="LName" layoutX="26.0" layoutY="118.0" prefHeight="30.0" prefWidth="252.0" style="-fx-background-radius: 50px;" />
+            <Label layoutX="28.0" layoutY="156.0" prefHeight="30.0" prefWidth="149.0" text="Phone number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="PNumber" layoutX="26.0" layoutY="193.0" prefHeight="30.0" prefWidth="252.0" style="-fx-background-radius: 50px;" />
+            <Label layoutX="26.0" layoutY="231.0" prefHeight="30.0" prefWidth="123.0" text="Country" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="311.0" prefHeight="30.0" prefWidth="149.0" text="Address" textFill="#f7f5f5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="Address" layoutX="26.0" layoutY="354.0" prefHeight="69.0" prefWidth="252.0" />
+            <Label layoutX="26.0" layoutY="431.0" prefHeight="30.0" prefWidth="149.0" text="Pin" textFill="#ece8e8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Pin" layoutX="26.0" layoutY="470.0" prefHeight="30.0" prefWidth="252.0" style="-fx-background-radius: 50px;" />
+            <Label fx:id="GrandTDeliver" alignment="CENTER" layoutX="187.0" layoutY="522.0" prefHeight="30.0" prefWidth="149.0" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="26.0" layoutY="522.0" prefHeight="30.0" prefWidth="149.0" text="Total Prize--&gt;" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="231.0" prefHeight="30.0" prefWidth="123.0" text="City" textFill="#f7f1f1" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="268.0" prefHeight="30.0" prefWidth="123.0" text="India" textFill="#eae8e8">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="161.0" layoutY="268.0" prefHeight="30.0" prefWidth="131.0" text="Banglore" textFill="#e7e2e2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Label alignment="CENTER" layoutX="137.0" layoutY="4.0" prefHeight="44.0" prefWidth="262.0" text="Delivery Address" textFill="#faeaea">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="324.0" layoutY="637.0" mnemonicParsing="false" onAction="#BUY" prefHeight="30.0" prefWidth="90.0" style="-fx-background-radius: 50px;" text="BUY" />
+      <Label fx:id="deliveryUsername" layoutX="43.0" layoutY="10.0" prefHeight="30.0" prefWidth="123.0">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <ImageView fitHeight="35.0" fitWidth="40.0" layoutX="8.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/UserName.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="141.0" layoutY="637.0" mnemonicParsing="false" onAction="#BackDeli" prefHeight="30.0" prefWidth="90.0" style="-fx-background-radius: 50px;" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShoppingApp.Admin_Order">
+   <children>
+      <Label alignment="CENTER" layoutX="271.0" layoutY="14.0" prefHeight="38.0" prefWidth="201.0" text="Order info">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ScrollPane layoutX="36.0" layoutY="64.0" prefHeight="439.0" prefWidth="682.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="558.0" prefWidth="672.0">
+               <children>
+                  <TableView fx:id="Tableview" layoutX="-3.0" prefHeight="562.0" prefWidth="672.0">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="userN" prefWidth="136.79998779296875" text="User Name" />
+                        <TableColumn fx:id="item" prefWidth="124.00001525878906" text="Item" />
+                        <TableColumn fx:id="prize" prefWidth="98.4000244140625" text="Prize" />
+                        <TableColumn fx:id="quantity" prefWidth="110.40003967285156" text="Quantity" />
+                        <TableColumn fx:id="total" prefWidth="124.0" text="Total" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Button layoutX="229.0" layoutY="538.0" mnemonicParsing="false" onAction="#BackOrder" prefHeight="34.0" prefWidth="83.0" text="Back">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="431.0" layoutY="538.0" mnemonicParsing="false" onAction="#Show" prefHeight="34.0" prefWidth="83.0" text="Show">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

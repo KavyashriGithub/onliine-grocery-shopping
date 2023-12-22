@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="839.0" style="-fx-background-color: #ffe3cc; -fx-background-radius: 30px;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShoppingApp.Sign_In">
+    <children>
+        <Pane layoutX="386.0" layoutY="14.0" prefHeight="537.0" prefWidth="441.0" style="-fx-border-radius: 20px; -fx-background-color: #ffe3cc; -fx-border-color: black;">
+            <children>
+                <Button layoutX="90.0" layoutY="451.0" mnemonicParsing="false" onAction="#back2" prefHeight="34.0" prefWidth="73.0" style="-fx-background-radius: 10px;" text="LOGIN" textFill="#333232">
+               <font>
+                  <Font size="14.0" />
+               </font>
+                </Button>
+                <Button layoutX="266.0" layoutY="451.0" mnemonicParsing="false" onAction="#create1" prefHeight="34.0" prefWidth="73.0" style="-fx-background-radius: 10px;" text="CREATE" textFill="#363535">
+               <font>
+                  <Font size="14.0" />
+               </font>
+                </Button>
+                <Label alignment="CENTER" layoutX="81.0" layoutY="24.0" prefHeight="41.0" prefWidth="280.0" text="CREATE   ACCOUNT" textFill="#bf5403">
+                    <font>
+                        <Font name="Bookman Old Style" size="22.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="userName1" layoutX="124.0" layoutY="157.0" prefHeight="34.0" prefWidth="203.0" promptText="USER NAME" style="-fx-background-radius: 50px;" />
+                <TextField fx:id="Email1" layoutX="126.0" layoutY="338.0" prefHeight="34.0" prefWidth="203.0" promptText="E-MAIL" style="-fx-background-radius: 50px;" />
+                <PasswordField fx:id="password1" layoutX="124.0" layoutY="216.0" prefHeight="34.0" prefWidth="203.0" promptText="PASSWORD" style="-fx-background-radius: 50px;" />
+                <Label layoutX="57.0" layoutY="419.0" prefHeight="17.0" prefWidth="144.0" text="Already have an account?">
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.9772727435285395" startY="0.4128787011811228">
+                            <stops>
+                                <Stop>
+                                    <color>
+                                        <Color />
+                                    </color>
+                                </Stop>
+                                <Stop offset="1.0">
+                                    <color>
+                                        <Color red="1.0" green="1.0" blue="1.0" />
+                                    </color>
+                                </Stop>
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+            <ImageView fitHeight="41.0" fitWidth="46.0" layoutX="66.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/UserName.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="46.0" layoutX="66.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/lock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="46.0" layoutX="66.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/lock.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="46.0" layoutX="66.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Email.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="messageLable1" alignment="CENTER" layoutX="124.0" layoutY="65.0" prefHeight="25.0" prefWidth="194.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="confirmpassword1" layoutX="129.0" layoutY="278.0" prefHeight="34.0" prefWidth="203.0" promptText="COMFIRM PASSWORD" style="-fx-background-radius: 50px;" />
+            <TextField fx:id="FirstName1" layoutX="27.0" layoutY="91.0" prefHeight="34.0" prefWidth="194.0" promptText="First Name" />
+            <TextField fx:id="LastName1" layoutX="230.0" layoutY="91.0" prefHeight="34.0" prefWidth="194.0" promptText="Last Name" />
+            </children>
+        </Pane>
+      <Pane layoutY="-5.0" prefHeight="574.0" prefWidth="378.0">
+         <children>
+            <ImageView fitHeight="567.0" fitWidth="378.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/pexels-ali-khalil-7542051.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
